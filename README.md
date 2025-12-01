@@ -1,4 +1,126 @@
-## Hi there 👋
+# 👋 Hi, I'm Xingyu Shi 
+
+🎓 Graduate student in **Quantitative Methods in the Social Sciences (QMSS)** at Columbia University  
+💼 Data Scientist · Machine Learning Researcher · Applied NLP + Finance  
+📍 New York, USA  
+
+I focus on **data-driven decision-making**, **predictive modeling**, and **AI techniques applied to real-world problems**—from medical image classification to financial-market analytics and global socioeconomic indicators.
+
+---
+
+## 🔍 About Me
+
+- 🌐 Interested in **Machine Learning**, **Financial Econometrics**, **NLP for Markets**, **Deep Learning**, and **Data-Driven Product Strategy**  
+- 🤖 Experience building **neural networks** (CNN, ResNet, VGG, LSTM), **classical ML models**, and **end-to-end data pipelines**  
+- 📊 Passionate about transforming data into insights that directly inform policy, finance, or product development  
+- 🧠 Currently expanding skills in **MLOps**, **model interpretability**, and **large-scale sentiment analysis**  
+
+---
+
+## 🚀 Featured Data Science Projects
+
+### 🩺 **1. Medical Image Classification — Deep Learning for COVID / Pneumonia Detection**  
+🔗 *Project Repo:* https://github.com/Yifan-Zang/GR5074_Project2_MedicalImageClassification  
+
+Using a dataset of **15,153 radiography images**, we built and compared:  
+- ✔ **Baseline CNN**  
+- ✔ **ResNet50**  
+- ✔ **VGG16**  
+- ✔ **DenseNet121**  
+- ✔ **InceptionV3**
+
+**Key Highlights:**
+- Achieved **96.28% test accuracy** with **VGG16** (best-performing model)  
+- Implemented **GPU-accelerated training**, **data augmentation**, and **transfer learning**  
+- Evaluated models using **confusion matrices, learning curves, and loss analysis**  
+- Applicable to real clinical triage pipelines and medical AI systems
+
+*(This project demonstrates strong deep-learning modeling skills and ML engineering practices.)*
+
+---
+
+### 🌍 **2. World Happiness Classification Competition — Feature Engineering + ML Pipeline**  
+📄 *Project extracted from:* G_4_Project1.pdf :contentReference[oaicite:1]{index=1}  
+
+Built an end-to-end ML pipeline to classify countries into **happiness categories** based on socioeconomic indicators:
+- GDP per capita  
+- Health & life expectancy  
+- Social support  
+- Education levels  
+- Poverty metrics  
+- Freedom & corruption indices  
+
+**Techniques Used:**
+- Missing value imputation  
+- One-hot encoding + StandardScaler  
+- **Random Forest**, **GridSearchCV**, **Gradient Boosting**, **KNN**, **SVC**  
+- Advanced feature engineering (log transforms, interaction terms)  
+
+**Outcome:**  
+Achieved improved classification performance through optimized RandomForest and hyperparameter tuning.
+
+*(This project shows your strength in classical ML workflows, preprocessing, and applied competition-style modeling.)*
+
+---
+
+### 📈 **3. Master Thesis — News Sentiment & Next-Day Return Predictability in U.S. Tech Stocks (2021–2024)**
+
+**Research Question:**  
+> Does sector-level news sentiment (macro + industry + firm-level) predict next-day excess returns for U.S. technology stocks?
+
+**Methods & Data:**
+- Daily CRSP returns  
+- RavenPack Event Sentiment Score (ESS)  
+- Fama–French 6-factor model  
+- Panel regressions with fixed effects  
+- Leave-one-out (LOO) sentiment construction  
+- Robustness checks + heterogeneity tests (size, volatility, liquidity)
+
+**Key Findings (Short Summary):**
+- Sector sentiment has **no broad next-day predictive power**, consistent with fast information assimilation  
+- **Significant heterogeneity:** smaller firms react more strongly to aggregate sentiment  
+- Results robust to FF6 controls, alternate clustering, and weekly aggregation  
+
+*(This project demonstrates econometric modeling, NLP-based sentiment analysis, and finance-domain expertise.)*
+
+---
+
+## 🛠️ Tech Stack
+
+### **Languages**
+- Python (NumPy, Pandas, Scikit-Learn, TensorFlow, Keras, Statsmodels)  
+- SQL  
+- R (Econometrics + Data Analysis)  
+
+### **Tools & Frameworks**
+- TensorFlow / Keras  
+- Scikit-Learn  
+- GridSearchCV  
+- Jupyter Notebook  
+- Git & GitHub  
+- WRDS, RavenPack, CRSP / Compustat  
+
+### **Specialties**
+- Machine Learning  
+- Deep Learning for Imaging  
+- Feature Engineering  
+- NLP-based sentiment analysis  
+- Econometrics (panel models, factor models)  
+- Data Visualization  
+
+---
+
+## 📬 Get in Touch
+
+📫 Email: xs2557@columbia.edu  
+🔗 LinkedIn: *www.linkedin.com/in/xingyu-shi-02734b325*  
+📦 GitHub: https://github.com/xingyushi11  
+
+Looking for **Data Science / Machine Learning / Quantitative Analyst** roles.
+
+Thanks for stopping by!  
+✨ *Let’s build something impactful together.*
+
 
 <!--
 **xingyushi1119/xingyushi1119** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
