@@ -57,8 +57,6 @@ Using a dataset of **15,153 radiography images**, we built and compared:
 - **Significant heterogeneity:** smaller firms react more strongly to aggregate sentiment  
 - Results robust to FF6 controls, alternate clustering, and weekly aggregation  
 
-*(This project demonstrates econometric modeling, NLP-based sentiment analysis, and finance-domain expertise.)*
-
 ---
 
 ## 🛠️ Tech Stack
@@ -88,7 +86,7 @@ Using a dataset of **15,153 radiography images**, we built and compared:
 
 ## 📬 Get in Touch
 
-📫 Email: xs2557@columbia.edu  
+📫 Email: xs2557@columbia.edu/ shixingyuemily@gmail.com / xs2048@nyu.edu
 🔗 LinkedIn: *www.linkedin.com/in/xingyu-shi-02734b325*  
 📦 GitHub: https://github.com/xingyushi11  
 
