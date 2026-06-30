@@ -41,6 +41,7 @@ Using a dataset of **15,153 radiography images**, we built and compared:
 
 ### 📈 **2. Master Thesis — News Sentiment & Next-Day Return Predictability in U.S. Tech Stocks (2021–2024)**
 🔗 *Project Repo:* https://github.com/xingyushi1119/masterthesis
+
 **Research Question:**  
 > Does sector-level news sentiment (macro + industry + firm-level) predict next-day excess returns for U.S. technology stocks?
 
