@@ -58,6 +58,91 @@ Using a dataset of **15,153 radiography images**, we built and compared:
 - Results robust to FF6 controls, alternate clustering, and weekly aggregation  
 
 ---
+### 📈 **3.ETF Tracker (Group project) **
+🔗 *Project Repo:* 
+A full-stack web application that lets users browse ETFs, stocks, sectors, and
+market indices, explore the relationships between them, and get sector-based
+ETF recommendations. Built as a database systems course project (group of 3) on
+a PostgreSQL backend with a Flask front end.
+
+> **Note:** This is a group project. My primary contributions were the
+> relational schema design, the Python data-ingestion pipeline, and the
+> SQL analytics behind the recommendation and exposure features.
+
+---
+
+## What it does
+
+- **Browse & search** ETFs, stocks, sectors, and indices, with detail pages
+  showing how entities relate (e.g. which ETFs hold a given stock and at what
+  weight).
+- **User accounts** with registration, login, password hashing, and sessions.
+- **Favorites & personalized dashboard** for logged-in users.
+- **Sector-similarity ETF recommendations** based on the sectors of the ETFs a
+  user has liked.
+- **Comments** on ETF pages, with comment counts maintained automatically by a
+  database trigger.
+
+---
+
+## Data model
+
+A normalized relational schema centered on funds and their constituents:
+
+- **Core entities:** `ETF`, `Stock`, `Sector`, `market_index`, `Fund_Family`
+- **Weighted many-to-many relationships:**
+  - `Stock_in_ETF` (stock ↔ ETF, with position weight)
+  - `ETF_has_Sector` (ETF ↔ sector, with sector weight)
+  - `Stock_in_Index` (stock ↔ index, with weight)
+  - `Fund_has_ETF` (fund family ↔ ETF)
+- **User tables:** `Users`, `User_Likes_ETF`
+- Referential integrity enforced with primary and foreign key constraints.
+
+---
+
+## Interesting database operations
+
+**Sector-similarity recommendations.** For each ETF a user likes, the query
+finds its sectors, then finds other ETFs sharing those sectors, counts the
+shared sectors as a similarity score, ranks, and de-duplicates across the
+user's liked set. Implemented with CTEs and multi-table joins.
+
+**Stock cross-holding view.** Joins `Stock`, `Sector`, `Stock_in_ETF`, and
+`ETF` to show, for any stock, every ETF that holds it ordered by position
+weight — surfacing where a stock has the most exposure across the ETF universe.
+
+**Automatic comment counts.** A PL/pgSQL trigger (`update_comment_count()`)
+increments a stored comment count on each ETF whenever a new comment is added.
+
+---
+
+## Stack
+
+Python (Flask), PostgreSQL (with PL/pgSQL), HTML/Bootstrap. Data was loaded
+from a curated source spreadsheet via a pandas + psycopg2 ingestion script that
+validated foreign keys against existing dimension tables before loading.
+
+---
+
+## Repo layout
+
+```
+app.py                  Flask app (routes, queries, auth)
+templates/              Jinja/Bootstrap templates
+create_user_tables.sql  User & favorites tables
+SQLSetup/               Schema setup, import scripts, analytical queries
+```
+
+## Running locally
+
+```bash
+pip install -r requirements.txt
+# set your PostgreSQL connection details (host, db, user, schema)
+python3 app.py
+```
+
+The app expects a populated PostgreSQL database; see `SQLSetup/` for the
+schema and import scripts.
 
 ## 🛠️ Tech Stack
 
@@ -88,7 +173,7 @@ Using a dataset of **15,153 radiography images**, we built and compared:
 
 📫 Email: xs2557@columbia.edu/ shixingyuemily@gmail.com / xs2048@nyu.edu
 🔗 LinkedIn: *www.linkedin.com/in/xingyu-shi-02734b325*  
-📦 GitHub: https://github.com/xingyushi11  
+📦 GitHub: https://github.com/xingyushi1119 
 
 Looking for **Data Science / Machine Learning / Quantitative Analyst** roles.
 
@@ -96,17 +181,3 @@ Thanks for stopping by!
 ✨ *Let’s build something impactful together.*
 
 
-<!--
-**xingyushi1119/xingyushi1119** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
