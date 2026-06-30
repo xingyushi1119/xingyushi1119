@@ -35,36 +35,12 @@ Using a dataset of **15,153 radiography images**, we built and compared:
 - Evaluated models using **confusion matrices, learning curves, and loss analysis**  
 - Applicable to real clinical triage pipelines and medical AI systems
 
-*(This project demonstrates strong deep-learning modeling skills and ML engineering practices.)*
 
 ---
 
-### 🌍 **2. World Happiness Classification Competition — Feature Engineering + ML Pipeline**  
-📄 *Project extracted from:* G_4_Project1.pdf :contentReference[oaicite:1]{index=1}  
 
-Built an end-to-end ML pipeline to classify countries into **happiness categories** based on socioeconomic indicators:
-- GDP per capita  
-- Health & life expectancy  
-- Social support  
-- Education levels  
-- Poverty metrics  
-- Freedom & corruption indices  
-
-**Techniques Used:**
-- Missing value imputation  
-- One-hot encoding + StandardScaler  
-- **Random Forest**, **GridSearchCV**, **Gradient Boosting**, **KNN**, **SVC**  
-- Advanced feature engineering (log transforms, interaction terms)  
-
-**Outcome:**  
-Achieved improved classification performance through optimized RandomForest and hyperparameter tuning.
-
-*(This project shows your strength in classical ML workflows, preprocessing, and applied competition-style modeling.)*
-
----
-
-### 📈 **3. Master Thesis — News Sentiment & Next-Day Return Predictability in U.S. Tech Stocks (2021–2024)**
-
+### 📈 **2. Master Thesis — News Sentiment & Next-Day Return Predictability in U.S. Tech Stocks (2021–2024)**
+🔗 *Project Repo:* https://github.com/xingyushi1119/masterthesis
 **Research Question:**  
 > Does sector-level news sentiment (macro + industry + firm-level) predict next-day excess returns for U.S. technology stocks?
 
